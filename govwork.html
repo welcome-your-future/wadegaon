@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>वडेगाव - गावाची माहिती</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/villageinfo.css">
+  </head>
+   <link rel="stylesheet" href="index.css">
+  <body>
+    <!-- Google Translator -->
+    <div class="google-translator">
+      <div id="google_translate_element"></div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            महाराष्ट्र शासन | GOVERNMENT OF MAHARASHTRA
+          </div>
+          <div class="col-md-6 text-end">
+            <i class="fas fa-envelope"></i><a href="mailto:wadegaon.stegp@rediffmail.com
+">wadegaon.stegp@rediffmail.com
+</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo Header -->
+<div class="logo-header py-3 d-flex justify-content-between align-items-center px-4">
+  <div class="logo-header py-3 d-flex justify-content-center align-items-center">
+  <img src="img/main_logo.jpg" alt="ग्रामपंचायत लोगो" class="logo">
+</div>
+        
+      </div>
+    </div>
+    <div class="contact-short d-none d-md-block text-end">
+      
+    </div>
+  </div>
+    <!-- Navigation Bar -->
+       <nav class="navbar navbar-expand-lg navbar-dark nav-bar">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"
+                  ><i class="fas fa-home"></i> मुखपृष्ठ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="members.html"
+                  ><i class="fas fa-users"></i> पदाधिकारी</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="villageinfo.html"
+                  ><i class="fas fa-info-circle"></i> गावाची माहिती</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="impnumbers.html"
+                  ><i class="fas fa-phone-alt"></i> महत्वाचे नंबर</a
+                >
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="govwork.html"
+                ><i class="fas fa-users"></i>शासकीय कामे </a
+              >
+          </li>
+              <!--  Dropdown Menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="yojna.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  onclick="window.location=this.getAttribute('href');"
+                >
+                  <i class="fas fa-project-diagram"></i> शासकीय योजना
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-custom"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="yojna.html"
+                      >१५ वित्त आयोग</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="jaljeevan.html"
+                      >जल जीवन मिशन</a
+                    >
+                  </li>
+  
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="pmawas.html"
+                      >प्रधान मंत्री आवास योजना</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="nrega.html"
+                      >महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार हमी योजना</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="tanda_vasti.html"
+                      >तांडा/वस्ती योजना</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="sc_st_development.html"
+                      >अनुसूचीत जाती व नवबौध्द विकास</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="ramaiawas.html"
+                      >रमाई आवास योजना</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="shabriawas.html"
+                      >शबरी आदिवासी घरकुल योजना</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- लाभार्थी रजिस्टर Dropdown Menu -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="beneficiaryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user-check"></i> लाभार्थी रजिस्टर
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-custom"
+                  aria-labelledby="beneficiaryDropdown"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="pm_awas.html"
+                      >प्रधानमंत्री आवास योजना</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="shabri_awas.html"
+                      >शबरी आवास योजना</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-item-custom"
+                      href="ramai_awas.html"
+                      >रमाई आवास योजना</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="services-for-citizens.html"
+                  ><i class="fas fa-user-check"></i> नागरिकांसाठी सेवा</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="tax-collection.html"
+                  ><i class="fas fa-money-bill-wave"></i> कर संकलन</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="complain-us.html"
+                  ><i class="fas fa-comments"></i> तक्रार द्या</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <div class="container">
+        <marquee behavior="scroll" direction="left">
+          <i class="fas fa-bullhorn"></i> ग्रामपंचायत मध्ये स्वच्छता अभियान चालू
+          आहे. सर्व नागरिकांनी सहभागी व्हावे.
+        </marquee>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <!-- Notification -->
+      <div class="notification">
+       <hi><i class="fas fa-exclamation-circle red-icon"></i></hi>
+
+        <strong>महत्वाची सूचना :</strong> नवीन जन्म नोंदणी प्रक्रिया ऑनलाईन सुरू
+        झाली आहे.
+      </div>
+      <h2>Approved Government Work in the Village</h2>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Google Translator
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "mr",
+            includedLanguages: "mr,en,hi",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+
+      
+
+      // Visitor Counter
+      function updateVisitorCounter() {
+        if (localStorage.getItem("visits")) {
+          let visits = parseInt(localStorage.getItem("visits")) + 1;
+          localStorage.setItem("visits", visits);
+          document.getElementById("visitorCounter").innerText = visits;
+        } else {
+          localStorage.setItem("visits", 1);
+          document.getElementById("visitorCounter").innerText = 1;
+        }
+      }
+      
+      
+
+      // Accessibility Panel Toggle
+document.getElementById("gigwButton").addEventListener("click", function () {
+  const panel = document.getElementById("accessibilityPanel");
+  panel.style.display = panel.style.display === "block" ? "none" : "block";
+});
+
+// Text Size Controls
+document.getElementById("increaseText").addEventListener("click", function () {
+  if (document.body.classList.contains("text-large")) {
+    document.body.classList.remove("text-large");
+    document.body.classList.add("text-xlarge");
+  } else if (document.body.classList.contains("text-xlarge")) {
+    // Already at maximum
+  } else {
+    document.body.classList.add("text-large");
+  }
+});
+
+document.getElementById("decreaseText").addEventListener("click", function () {
+  if (document.body.classList.contains("text-xlarge")) {
+    document.body.classList.remove("text-xlarge");
+    document.body.classList.add("text-large");
+  } else if (document.body.classList.contains("text-large")) {
+    document.body.classList.remove("text-large");
+    document.body.classList.add("text-small");
+  } else {
+    document.body.classList.add("text-small");
+  }
+});
+
+document.getElementById("resetText").addEventListener("click", function () {
+  document.body.classList.remove("text-small", "text-large", "text-xlarge");
+});
+
+// Dark Mode Toggle
+document.getElementById("toggleDarkMode").addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+});
+
+// Text-to-Speech Functionality
+let speechSynthesisObj = window.speechSynthesis;
+let speechUtterance = null;
+
+document.getElementById("readAloud").addEventListener("click", function () {
+  const mainContent = document.querySelector(".container.mt-4");
+  if (!mainContent) return;
+
+  const text = mainContent.textContent.replace(/\s+/g, " ").trim();
+
+  if (speechSynthesisObj.speaking) {
+    speechSynthesisObj.cancel();
+  }
+
+  speechUtterance = new SpeechSynthesisUtterance(text);
+  speechUtterance.lang = "mr-IN"; // Marathi
+  speechUtterance.rate = 0.9;
+
+  speechSynthesisObj.speak(speechUtterance);
+});
+
+document.getElementById("stopReading").addEventListener("click", function () {
+  if (speechSynthesisObj.speaking) {
+    speechSynthesisObj.cancel();
+  }
+});
+
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-4 mb-4">
+          <h5>ग्रामपंचायतीची माहिती</h5>
+          <p>
+            नाव: वडेगाव <br />
+            स्थापना: - <br />
+            Email: wadegaon.stegp@rediffmail.com
+ <br />
+            सेन्सस कोड: 549697 <br />
+            तालुका पासून अंतर: 18 कि.मी. <br />
+            जिल्हा मुख्यालयापासून अंतर: 82 कि.मी.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5>द्रुत लिंक</h5>
+          <div class="quick-links">
+            <a href="index.html"
+              ><i class="fas fa-angle-right"></i> मुख्य पृष्ठ</a
+            >
+            <a href="villageinfo.html"
+              ><i class="fas fa-angle-right"></i> ग्रामपंचायती विषयी</a
+            >
+            <a href="tax-collection.html"
+              ><i class="fas fa-angle-right"></i> आर्थिक माहिती</a
+            >
+            <a href="yojna.html"
+              ><i class="fas fa-angle-right"></i> योजना व कामे</a
+            >
+            <a href="services-for-citizens.html"
+              ><i class="fas fa-angle-right"></i> ऑनलाइन सेवा</a
+            >
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-4 mb-4">
+          <h5>संपर्क</h5>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> ग्रामपंचायत वडेगाव, पिन: 444502
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i
+            ><a href="mailto:wadegaon.stegp@rediffmail.com
+"
+              >wadegaon.stegp@rediffmail.com
+</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-phone-alt"></i
+            ><a href="tel:+91 9370694651">9370694651</a>
+          </p>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+  
+                  
+
+                <!-- </p>
+                <div class="social-img">
+                  <a href="https://www.instagram.com/kumiradi.infotech" target="_blank">
+                    <img src="img/instagram.jpg" alt="Instagram">
+                  </a>
+                  <a href="https://www.facebook.com/yourusername" target="_blank">
+                    <img src="img/facebook.jpg" alt="Facebook">
+                  </a>
+                  <a href="https://www.youtube.com/@kumiradiinfotech" target="_blank">
+                    <img src="img/youtube.jpg" alt="YouTube">
+                  </a>
+                </div> -->
+                <!-- Horizontal line below the link -->
+                <hr style="
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  width: 80%;
+                  margin: 10px auto;
+                " />
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- GIGW Compliance Button -->
+        <div class="gigw-compliance0" id="gigwButton">
+          <i class="fas fa-universal-access"></i>
+        </div>
+
+        <!-- Accessibility Panel -->
+        <div class="accessibility-panel" id="accessibilityPanel">
+          <button id="increaseText">
+            <i class="fas fa-text-height"></i> Increase Text Size
+          </button>
+          <button id="decreaseText">
+            <i class="fas fa-text-height"></i> Decrease Text Size
+          </button>
+          <button id="resetText">
+            <i class="fas fa-undo"></i> Reset Text Size
+          </button>
+          <button id="toggleDarkMode">
+            <i class="fas fa-moon"></i> Toggle Dark Mode
+          </button>
+          <button id="readAloud">
+            <i class="fas fa-volume-up"></i> Read Aloud
+          </button>
+          <button id="stopReading">
+            <i class="fas fa-stop"></i> Stop Reading
+          </button>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        // ---------------- Google Translator ----------------
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "mr",
+              includedLanguages: "mr,en,hi",
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            },
+            "google_translate_element"
+          );
+        }
+
+        // ---------------- Visitor Counter ----------------
+        function updateVisitorCounter() {
+          if (localStorage.getItem("visits")) {
+            let visits = parseInt(localStorage.getItem("visits")) + 1;
+            localStorage.setItem("visits", visits);
+            document.getElementById("visitorCounter").innerText = visits;
+          } else {
+            localStorage.setItem("visits", 1);
+            document.getElementById("visitorCounter").innerText = 1;
+          }
+        }
+        document.addEventListener("DOMContentLoaded", updateVisitorCounter);
+
+        // ---------------- Counter Animation ----------------
+        function animateCounters() {
+          const counters = document.querySelectorAll(".counter");
+          const duration = 2500;
+          const interval = 50;
+
+          counters.forEach((counter) => {
+            const target = +counter.getAttribute("data-target");
+            const steps = duration / interval;
+            const increment = target / steps;
+            let current = 0;
+
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                counter.innerText = target;
+                clearInterval(timer);
+              } else {
+                counter.innerText = Math.floor(current);
+              }
+            }, interval);
+          });
+        }
+        document.addEventListener("DOMContentLoaded", animateCounters);
+
+        // ---------------- Gallery Modal ----------------
+        document.addEventListener("DOMContentLoaded", function () {
+          const galleryImages = document.querySelectorAll(".gallery-img");
+          const modalImage = document.getElementById("modalImage");
+          const modalCaption = document.getElementById("modalCaption");
+          const imageModal = new bootstrap.Modal(
+            document.getElementById("imageModal")
+          );
+
+          galleryImages.forEach((image) => {
+            image.addEventListener("click", function () {
+              modalImage.src = this.src;
+              modalCaption.innerText = this.dataset.caption;
+              imageModal.show();
+            });
+          });
+
+          // ---------------- See More Button ----------------
+          const seeMoreBtn = document.getElementById("seeMoreBtn");
+          const moreImages = document.getElementById("moreImages");
+
+          if (seeMoreBtn && moreImages) {
+            seeMoreBtn.addEventListener("click", () => {
+              if (moreImages.classList.contains("d-none")) {
+                moreImages.classList.remove("d-none");
+                seeMoreBtn.innerText = "See Less";
+              } else {
+                moreImages.classList.add("d-none");
+                seeMoreBtn.innerText = "See More";
+              }
+            });
+          }
+        });
+
+        // ---------------- Accessibility Panel ----------------
+        const gigwButton = document.getElementById("gigwButton");
+        const accessibilityPanel = document.getElementById("accessibilityPanel");
+
+        gigwButton.addEventListener("click", () => {
+          accessibilityPanel.classList.toggle("active");
+        });
+
+        let currentSize = 100;
+
+        document.getElementById("increaseText").addEventListener("click", () => {
+          currentSize += 10;
+          document.body.style.fontSize = currentSize + "%";
+        });
+
+        document.getElementById("decreaseText").addEventListener("click", () => {
+          currentSize -= 10;
+          document.body.style.fontSize = currentSize + "%";
+        });
+
+        document.getElementById("resetText").addEventListener("click", () => {
+          currentSize = 100;
+          document.body.style.fontSize = "100%";
+        });
+
+        document
+          .getElementById("toggleDarkMode")
+          .addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+          });
+
+        // ---------------- Text-to-Speech ----------------
+        let synth = window.speechSynthesis;
+        let utterance;
+
+        document.getElementById("readAloud").addEventListener("click", () => {
+          let text = document.body.innerText;
+          if (synth.speaking) synth.cancel();
+          utterance = new SpeechSynthesisUtterance(text);
+          synth.speak(utterance);
+        });
+
+        document.getElementById("stopReading").addEventListener("click", () => {
+          if (synth.speaking) synth.cancel();
+        });
+      </script>
+
+      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

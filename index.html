@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wadegaon Station Gram Panchayat</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<style>
+  :root {
+    --primary-color: #0d1140;
+    --secondary-color: #171b47;
+    --accent-color: #ff6b35;
+    --light-color: #f9f9f9;
+    --dark-color: #333;
+    --text-color: #333;
+    --text-light: #f8f9fa;
+    --border-radius: 8px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+</style>
+
+<body>
+  <!-- Google Translator -->
+  <div class="google-translator">
+    <div id="google_translate_element"></div>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <i class="fas fa-landmark"></i> महाराष्ट्र शासन | GOVERNMENT OF
+          MAHARASHTRA
+        </div>
+        <div class="col-12 col-md-6 text-center">
+          <i class="fas fa-envelope"></i><a href="mailto:wadegaon.stegp@rediffmail.com
+">wadegaon.stegp@rediffmail.com
+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logo Header -->
+  <div class="logo-header py-3 d-flex justify-content-between align-items-center px-4">
+    <div class="logo-container d-flex align-items-center">
+      <img src="img/main_logo.jpg" alt="ग्रामपंचायत लोगो" class="logo me-3" />
+      <div class="logo-text"></div>
+    </div>
+    <div class="contact-short d-none d-md-block text-end"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark nav-bar">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> मुखपृष्ठ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="members.html"><i class="fas fa-users"></i> पदाधिकारी</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="villageinfo.html"><i class="fas fa-info-circle"></i> गावाची माहिती</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="impnumbers.html"><i class="fas fa-phone-alt"></i> महत्वाचे नंबर</a>
+          </li>
+          <!--  Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="yojna.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" onclick="window.location=this.getAttribute('href');">
+              <i class="fas fa-project-diagram"></i> शासकीय योजना
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="yojna.html">१५ वित्त आयोग</a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="jaljeevan.html">जल जीवन मिशन</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="pmawas.html">प्रधान मंत्री आवास योजना</a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="nrega.html">महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार
+                  हमी योजना</a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="tanda_vasti.html">तांडा/वस्ती योजना</a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="sc_st_development.html">अनुसूचीत जाती व नवबौध्द
+                  विकास</a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="ramaiawas.html">रमाई आवास योजना</a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="shabriawas.html">शबरी आदिवासी घरकुल योजना</a>
+              </li>
+            </ul>
+          </li>
+          <!-- लाभार्थी रजिस्टर Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="beneficiaryDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user-check"></i> लाभार्थी रजिस्टर
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="beneficiaryDropdown">
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="pm_awas.html">प्रधानमंत्री आवास योजना</a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="shabri_awas.html">शबरी आवास योजना</a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-item-custom" href="ramai_awas.html">रमाई आवास योजना</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="services-for-citizens.html"><i class="fas fa-user-check"></i> नागरिकांसाठी
+              सेवा</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="tax-collection.html"><i class="fas fa-money-bill-wave"></i> कर संकलन</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="complain-us.html"><i class="fas fa-comments"></i> तक्रार द्या</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="container">
+      <marquee behavior="scroll" direction="left">
+        <i class="fas fa-bullhorn"></i> ग्रामपंचायत मध्ये स्वच्छता अभियान चालू
+        आहे. सर्व नागरिकांनी सहभागी व्हावे.
+      </marquee>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <!-- Notification -->
+    <div class="notification">
+      <!-- HTML -->
+      <hi><i class="fas fa-exclamation-circle red-icon"></i></hi>
+
+      <strong>महत्वाची सूचना :</strong> नवीन जन्म नोंदणी प्रक्रिया ऑनलाईन सुरू
+      झाली आहे.
+    </div>
+
+    <!-- Image Slider -->
+    <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/school2.jpeg" class="d-block w-100" alt="Village Image" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>अंगणवाडी फोटो </h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/school.jpeg" class="d-block w-100" alt="Community Hall" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>प्राथमिक शाळा & माध्यमिक शाळा</h2>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/school.jpeg" class="d-block w-100" alt="School Image" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>रेशनदुकान</h2>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img\school.jpeg" class="d-block w-100" alt="Water Project" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>वडेगाव </h2>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- About Section -->
+    <h3 class="section-title">गावा विषयी</h3>
+    <div class="row">
+      <div class="col-md-8">
+        <p style="font-size: 20px; text-align: justify">
+         ग्रामपंचायत वडेगाव/स्टेशन हे गोंदिया जिल्ह्यातील अर्जुनी/मोरगाव तालुक्यात वसलेले एक शेती प्रधान आणि प्रगतशील गाव असून, याची ओळख पर्यावरणपूरक जीवनशैली, सामाजिक एकता आणि सर्वांगीण विकासासाठी घेतलेल्या उपक्रमांमुळे विशेष ठरते. हे गाव नैसर्गिक सौंदर्याने नटलेले असून, पर्यावरण संरक्षणासाठी येथे विशेष प्रयत्न केले जातात. सुमारे १३१२ लोकसंख्या असलेल्या या गावातील ग्रामस्थांनी स्वच्छता, शिक्षण, आरोग्य, आणि कृषी क्षेत्रात उल्लेखनीय कामगिरी करत गावाचा विकास साधला आहे. 1959 मध्ये स्थापनेपासून ग्रामपंचायतने गावाच्या सर्वांगीण प्रगतीसाठी सातत्याने प्रयत्न केले असून, सामाजिक आणि पर्यावरणपूरक उपक्रम राबवून गावाच्या विकासाची दिशा निश्चित केली आहे. सामाजिक सहकार्य, पारदर्शक प्रशासन आणि शाश्वत विकासाच्या माध्यमातून गावाने स्वतःची वेगळी ओळख निर्माण केली आहे.स्वच्छता मोहिमा, वृक्षारोपण कार्यक्रम, शिक्षण व्यवस्था सुधारणा, आरोग्य सुविधांचा विकास आणि आधुनिक शेती तंत्रज्ञानाचा अवलंब यांसारख्या उपक्रमांमुळे गावाने एक आदर्श ग्राम म्हणून नावारूपास येण्याचा मार्ग तयार केला आहे. सामाजिक बांधिलकी आणि सुशासनाचा उत्तम नमुना असलेल्या वडेगाव/स्टेशन ग्रामपंचायतीने आपल्या संकल्पनेतून गावाच्या उज्ज्वल भविष्यासाठी एक दिशादर्शक पायंडा निर्माण केला आहे. भविष्यात अधिक प्रगतशील आणि स्वयंपूर्ण ग्राम बनवण्यासाठी येथील ग्रामस्थ आणि ग्रामपंचायत कटिबद्ध असून, आपल्या प्रयत्नांमुळे हे गाव एक आदर्श ग्राम म्हणून ओळखले जाणार आहे.
+        </p>
+        <p></p>
+        <p style="font-size: 20px; text-align: justify">
+          <!-- ग्रामपंचायत यशोगाथा माहिती : पाणी व्यवस्थापन आणि जलसंधारण: अनेक
+          ग्रामपंचायतींनी पाणी टंचाईवर मात करण्यासाठी विहीर पुनर्भरण, पाणलोट
+          क्षेत्र विकास आणि जलसंधारण प्रकल्पांसारखे उपक्रम यशस्वीपणे राबवले
+          आहेत. स्वच्छता अभियान: गावातील स्वच्छता राखण्यासाठी प्रभावी घनकचरा
+          व्यवस्थापन, वैयक्तिक शौचालयांची निर्मिती आणि जनजागृती मोहीम राबवून
+          यश मिळवले आहे. सौरऊर्जेचा वापर: काही ग्रामपंचायतींनी सार्वजनिक दिवे
+          आणि पाण्याच्या पंपासाठी सौरऊर्जेचा वापर करून वीज खर्चात बचत केली
+          आहे. डिजिटल ग्राम: आधुनिक तंत्रज्ञानाचा वापर करून ग्रामपंचायतीचे
+          व्यवहार ऑनलाइन करणे, करवसुली सुलभ करणे आणि नागरिकांना विविध सुविधा
+          डिजिटल माध्यमांद्वारे उपलब्ध करून देणे. शिक्षण आणि आरोग्य सेवा:
+          गावातील मुलांसाठी दर्जेदार शिक्षणाची सोय करणे, अंगणवाड्यांमध्ये
+          सुधारणा करणे आणि आरोग्य शिबिरांचे आयोजन करून लोकांचे आरोग्यमान
+          सुधारणे. -->
+          वडेगाव/स्टेशन हे गाव महाराष्ट्र राज्यातील गोंदिया जिल्ह्यात अर्जुनी/मोरगाव तालुक्यातील एक गाव आहे. हे जिल्हा मुख्यालय गोंदियापासून सुमारे ९० किमी अंतरावर आणि तालुका मुख्यालय अर्जुनी मोरगाव पासून सुमारे १०-१२ किमी अंतरावर आहे. प्रशासकीय दृष्ट्या वडेगाव/स्टेशन हे स्वतःचे ग्रामपंचायत केंद्र आहे.
+पोस्टल सेवा: वडेगाव/स्टेशन गावाचा पिन कोड ४४१७०१ आहे. या गावासाठीची पोस्टल सेवा वडेगाव/स्टेशन सब ऑफिस (S.O.) द्वारे पुरवली जाते.
+जवळची गावे: या गावाच्या आसपासची काही महत्त्वाची गावे इटखेडा (Itakheda), खामखुरा (Khamkhura), बुधेवाडा (Budhewada), धाबेटेकडी (Dhabetekadi), कन्हाळगाव (Kanhalgaon),पुयार (Puyar)
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <i class="fas fa-link"></i> महत्वाचे दुवे
+          </div>
+          <div class="card-body">
+            <div class="d-grid gap-2">
+              <a href="https://www.india.gov.in/" target="_blank" class="btn btn-outline-primary btn-lg">भारत सरकार</a>
+              <a href="https://www.maharashtra.gov.in/" target="_blank"
+                class="btn btn-outline-primary btn-lg">महाराष्ट्र शासन</a>
+              <a href="https://rdd.maharashtra.gov.in/" target="_blank" class="btn btn-outline-primary btn-lg">ग्रामीण
+                विकास व पंचायतराज विभाग</a>
+              <a href="https://nashik.gov.in/" target="_blank" class="btn btn-outline-primary btn-lg">जिल्हाधिकारी
+                कार्यालय</a>
+              <a href="https://nashikcitypolice.gov.in/" target="_blank" class="btn btn-outline-primary btn-lg">Akola
+                पोलीस</a>
+              <a href="https://aaplesarkar.mahaonline.gov.in/" target="_blank"
+                class="btn btn-outline-primary btn-lg">आपले सरकार सेवा</a>
+              <a href="https://mahadbt.maharashtra.gov.in/login/login" target="_blank"
+                class="btn btn-outline-primary btn-lg">महा DBT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Location-->
+    <div style="width: 100%; height: 400px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27039.352053636267!2d79.95331381925325!3d20.761456781151722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2c824fc2243ceb%3A0x35dcc25c51135179!2sWadegaon%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1759758274099!5m2!1sen!2sin"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+      <!-- Imp links -->
+      <div class="section">
+        <h1 class="section-title">गावाचा इतिहास</h1>
+
+        <h2 class="section-subtitle">ग्राम मानचित्र</h2>
+        <p>ग्राम मानचित्र (Gram Manchitra) हे भारतीय पंचायती राज मंत्रालयाने सुरू केलेले एक भू-स्थानिक माहिती प्रणाली
+          (GIS)
+          ऍप्लिकेशन आहे, जे ग्रामपंचायतींना त्यांच्या गावांचे स्थानिक नियोजन सुधारण्यासाठी आणि
+          ग्रामपंचायत विकास योजना (GPDP) तयार करण्यासाठी मदत करते. हे एक असे पोर्टल आहे जे गावातील विकासासाठी
+          आवश्यक असलेला अवकाशीय (spatial) नकाशा तयार करते. </p>
+        </p>
+        <h2 class="section-subtitle">माझी वसुंधरा योजना</h2>
+        <p>
+          माझी वसुंधरा योजना ही महाराष्ट्र शासनाची एक व्यापक पर्यावरणपूरक मोहीम आहे, जी पंचमहाभूतांवर आधारित आहे: भूमी,
+          जल, वायू,
+          अग्नी आणि आकाश. या मोहिमेचे मुख्य उद्दिष्ट वातावरणीय बदलांचा सामना करणे, नागरिकांचा सहभाग वाढवणे आणि शाश्वत
+          जीवनपद्धती स्वीकारण्यास प्रोत्साहन देणे
+          आहे. याअंतर्गत, हरित आच्छादन वाढवणे, पाणी संवर्धन करणे, ऊर्जेचा वापर कमी करणे आणि पर्यावरणाविषयी जागरूकता
+          निर्माण करणे यावर लक्ष केंद्रित केले जाते.
+        </p>
+        <h2 class="section-subtitle">ग्रामपंचायत स्कोअरकार्ड</h2>
+        <p>ग्रामपंचायत स्कोअरकार्ड, किंवा पंचायत प्रगती निर्देशांक (PAI) स्कोअर, आरोग्य, शिक्षण आणि पायाभूत
+          सुविधांसारख्या विविध क्षेत्रांमध्ये ग्रामपंचायतीच्या कामगिरी
+          आणि विकासाबद्दल मराठीत माहिती प्रदान करतो. पंचायतीच्या एकूण प्रगतीचे मूल्यांकन करणे, सुधारणा आवश्यक असलेले
+          क्षेत्र ओळखणे आणि त्यांना "सफल",
+          "आघाडीचा धावणारा", "काम करणारा","आकांक्षा" किंवा "नवशिक्या" अशा कामगिरी श्रेणींमध्ये वर्गीकृत करणेआवश्यक आहे ,
+          ज्यामुळे समग्र ग्रामीण विकासासाठी
+          चांगले मूल्यांकन आणि लक्ष्यित समर्थन मिळू शकेल . </p>
+        <div class="social-icons">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 mb-5">
+              <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+                <a href="https://grammanchitra.gov.in/" target="_blank">
+                  <img src="img/sc5.png" alt="Instagram" style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;" />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-5">
+              <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+                <a href="https://majhivasundhara.in/en/pledge/MQ%3D%3D" target="_blank">
+                  <img src="img/sc1.png" alt="Instagram" style="
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 20px;
+                    object-fit: cover;
+                    border-radius: 8px;" />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-5">
+              <div class="card shadow-sm h-100 text-center border-0 rounded-3">
+                <a href="https://pai.gov.in/PS/Public/SC.aspx" target="_blank">
+                  <img src="img/sc4.png" alt="Instagram" style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Officers Section -->
+        <div class="container mt-5">
+          <h2 class="section-title text-center mb-4">ग्रामपंचायत अधिकारी</h2>
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6 text-center border-end">
+                  <img src="img/Sarpanch.jpg" class="officer-img mb-3" alt="Sarpanch" style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  " />
+                  <h5 class="card-title">श्री.श्रीकांत भीमराव लोणारे</h5>
+                  <p class="card-text">सरपंच</p>
+                  <p class="card-text">
+                    <i class="fas fa-phone"></i><a href="tel:+919370694651">9370694651</a>
+                  </p>
+                </div>
+                <div class="col-md-6 text-center border-end">
+                  <img src="img/upsarpanch.jpg" class="officer-img mb-3" alt="Sarpanch" style="
+                    width: 250px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  " />
+                  <h5 class="card-title">श्री. अशोक उत्तम गवळी</h5>
+                  <p class="card-text">उपसरपंच</p>
+                  <p class="card-text">
+                    <i class="fas fa-phone"></i><a href="tel:+918806533040">8806533040</a>
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Population-->
+        <div class="container my-5">
+          <div class="row justify-content-center pb-3 mb-4">
+            <div class="col-lg-9 col-xl-8 text-center">
+              <h2 class="fw-bold text-dark mb-2">गावातील लोकसंख्या किती आहे</h2>
+              <hr class="mx-auto" style="
+                width: 60px;
+                height: 3px;
+                background-color: #007bff;
+                border: none;
+              " />
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-6 col-md-3 mb-4">
+              <div class="p-3 shadow-sm rounded bg-light">
+                <i class="fas fa-users fa-2x text-primary mb-2"></i>
+                <h4 class="fw-bold mb-0 counter" data-target="254">0</h4>
+                <p class="mb-0">कुटुंबांची संख्या</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <div class="p-3 shadow-sm rounded bg-light">
+                <i class="fas fa-users-between-lines fa-2x text-primary mb-2"></i>
+                <h4 class="fw-bold mb-0 counter" data-target="1312">0</h4>
+                <p class="mb-0">लोकसंख्या</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <div class="p-3 shadow-sm rounded bg-light">
+                <i class="fas fa-male fa-2x text-primary mb-2"></i>
+                <h4 class="fw-bold mb-0 counter" data-target="660">0</h4>
+                <p class="mb-0">पुरुष</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <div class="p-3 shadow-sm rounded bg-light">
+                <i class="fas fa-female fa-2x text-primary mb-2"></i>
+                <h4 class="fw-bold mb-0 counter" data-target="652">0</h4>
+                <p class="mb-0">महिला</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Gallery Section -->
+        <div class="container mt-5">
+          <h3 class="section-title">चित्रदालन</h3>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3" id="gallery">
+            <div class="col">
+              <div class="card gallery-card position-relative">
+                <img src="img\no_image.png" class="card-img-top gallery-img" alt="Image 1" data-caption="वडेगाव धरण" />
+                <div class="hover-caption">Click to zoom</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card gallery-card position-relative">
+                <img src="img\no_image.png" class="card-img-top gallery-img" alt="Image 2"
+                  data-caption="हनुमान मंदिर वडेगाव" />
+                <div class="hover-caption">Click to zoom</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card gallery-card position-relative">
+                <img src="img\no_image.png" class="card-img-top gallery-img" alt="Image 3"
+                  data-caption="ग्रामपंचायत कार्यालय" />
+                <div class="hover-caption">Click to zoom</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card gallery-card position-relative">
+                <img src="img\no_image.png" class="card-img-top gallery-img" alt="Image 3" data-caption="वडेगाव शाळा" />
+                <div class="hover-caption">Click to zoom</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card gallery-card position-relative">
+                <img src="img\no_image.png" class="card-img-top gallery-img" alt="Image 4" data-caption="ग्रामपंचायत  सभा" />
+                <div class="hover-caption">Click to zoom</div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+         <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 d-none mt-3"
+          id="moreImages"
+        >
+          
+          <div class="col">
+            <div class="card gallery-card position-relative">
+              <img
+                src="img/sc1.png"
+                class="card-img-top gallery-img"
+                alt="Image 6"
+                data-caption="प्राथमिक शाळा"
+              />
+              <div class="hover-caption">Click to zoom</div>
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="card gallery-card position-relative">
+              <img
+                src="img/gl7.png"
+                class="card-img-top gallery-img"
+                alt="Image 7"
+                data-caption="घंटागाडी"
+              />
+              <div class="hover-caption">Click to zoom</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card gallery-card position-relative">
+              <img
+                src="img/gl8.png"
+                class="card-img-top gallery-img"
+                alt="Image 8"
+                data-caption="जॅकवेल"
+              />
+              <div class="hover-caption">Click to zoom</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card gallery-card position-relative">
+              <img
+                src="img/gl9.png"
+                class="card-img-top gallery-img"
+                alt="Image 8"
+                data-caption="ग्रामपंचायत कार्यालय सोलर"
+              />
+              <div class="hover-caption">Click to zoom</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card gallery-card position-relative">
+              <img
+                src="img/gl10.png"
+                class="card-img-top gallery-img"
+                alt="Image 8"
+                data-caption="जॅकवेल सोलर"
+              />
+              <div class="hover-caption">Click to zoom</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card gallery-card position-relative">
+              <img
+                src="img/gl11.png"
+                class="card-img-top gallery-img"
+                alt="Image 8"
+                data-caption="मेन रोड"
+              />
+              <div class="hover-caption">Click to zoom</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card gallery-card position-relative">
+              <img
+                src="img/gl12.png"
+                class="card-img-top gallery-img"
+                alt="Image 8"
+                data-caption="दलित वस्ती सभागृह"
+              />
+              <div class="hover-caption">Click to zoom</div>
+            </div>
+          </div>
+        </div>
+        -->
+          <div class="text-center mt-3">
+            <button class="btn btn-primary" id="seeMoreBtn">See More</button>
+          </div>
+        </div>
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content position-relative p-0">
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+              <img id="modalImage" class="img-fluid rounded" alt="Full Size" />
+              <div id="modalCaption" class="text-center p-2 bg-dark text-white"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Icon Carousel -->
+        <div class="container mt-4">
+          <div class="icon-carousel">
+            <div class="icon-track">
+              <img src="img/sc1.png" alt="Icon 1" class="carousel-icon" />
+              <img src="img/sc2.png" alt="Icon 2" class="carousel-icon" />
+              <img src="img/sc3.png" alt="Icon 3" class="carousel-icon" />
+              <img src="img/sc4.png" alt="Icon 4" class="carousel-icon" />
+              <img src="img/sc5.png" alt="Icon 5" class="carousel-icon" />
+              <img src="img/sc6.png" alt="Icon 6" class="carousel-icon" />
+              <img src="img/sc7.png" alt="Icon 7" class="carousel-icon" />
+              <img src="img/sc8.png" alt="Icon 8" class="carousel-icon" />
+              <img src="img/sc9.png" alt="Icon 9" class="carousel-icon" />
+              <img src="img/sc10.png" alt="Icon 10" class="carousel-icon" />
+              <img src="img/sc11.png" alt="Icon 11" class="carousel-icon" />
+              <img src="img/sc12.png" alt="Icon 12" class="carousel-icon" />
+              <img src="img/sc1.png" alt="Icon 1" class="carousel-icon" />
+              <img src="img/sc2.png" alt="Icon 2" class="carousel-icon" />
+              <img src="img/sc3.png" alt="Icon 3" class="carousel-icon" />
+              <img src="img/sc4.png" alt="Icon 4" class="carousel-icon" />
+              <img src="img/sc5.png" alt="Icon 5" class="carousel-icon" />
+              <img src="img/sc6.png" alt="Icon 6" class="carousel-icon" />
+              <img src="img/sc7.png" alt="Icon 7" class="carousel-icon" />
+              <img src="img/sc8.png" alt="Icon 8" class="carousel-icon" />
+              <img src="img/sc9.png" alt="Icon 9" class="carousel-icon" />
+              <img src="img/sc10.png" alt="Icon 10" class="carousel-icon" />
+              <img src="img/sc11.png" alt="Icon 11" class="carousel-icon" />
+              <img src="img/sc12.png" alt="Icon 12" class="carousel-icon" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <!-- About Section -->
+              <div class="col-md-4 mb-4">
+                <h5>ग्रामपंचायतीची माहिती</h5>
+                <p>
+                  नाव: वडेगाव <br />
+                  स्थापना: - <br />
+                  Email: wadegaon.stegp@rediffmail.com
+ <br />
+                  सेन्सस कोड: 549697 <br />
+                  तालुका पासून अंतर: 18 कि.मी. <br />
+                  जिल्हा मुख्यालयापासून अंतर: 82 कि.मी.
+                </p>
+              </div>
+
+              <!-- Quick Links -->
+              <div class="col-md-4 mb-4">
+                <h5>द्रुत लिंक</h5>
+                <div class="quick-links">
+                  <a href="index.html"><i class="fas fa-angle-right"></i> मुख्य पृष्ठ</a>
+                  <a href="villageinfo.html"><i class="fas fa-angle-right"></i> ग्रामपंचायती विषयी</a>
+                  <a href="tax-collection.html"><i class="fas fa-angle-right"></i> आर्थिक माहिती</a>
+                  <a href="yojna.html"><i class="fas fa-angle-right"></i> योजना व कामे</a>
+                  <a href="services-for-citizens.html"><i class="fas fa-angle-right"></i> ऑनलाइन सेवा</a>
+                </div>
+              </div>
+
+              <!-- Contact -->
+              <div class="col-md-4 mb-4">
+                <h5>संपर्क</h5>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> ग्रामपंचायत वडेगाव, पिन: 444502
+                </p>
+                <p>
+                  <i class="fas fa-envelope"></i><a href="mailto:wadegaon.stegp@rediffmail.com
+">wadegaon.stegp@rediffmail.com
+</a>
+                </p>
+                <p>
+                  <i class="fas fa-phone-alt"></i><a href="tel:+91 9370694651">9370694651</a>
+                </p>
+              </div>
+            </div>
+
+            <hr class="footer-divider" />
+
+            <!-- Copyright -->
+            <div class="row">
+              <div class="col text-center">
+                <p class="mb-0">
+                  © 2025 वडेगाव ग्रामपंचायत. सर्व हक्क राखीव. <br />
+                  <!-- Design & Developed  --> 
+                  
+
+                <!-- </p>
+                <div class="social-img">
+                  <a href="https://www.instagram.com/kumiradi.infotech" target="_blank">
+                    <img src="img/instagram.jpg" alt="Instagram">
+                  </a>
+                  <a href="https://www.facebook.com/yourusername" target="_blank">
+                    <img src="img/facebook.jpg" alt="Facebook">
+                  </a>
+                  <a href="https://www.youtube.com/@kumiradiinfotech" target="_blank">
+                    <img src="img/youtube.jpg" alt="YouTube">
+                  </a>
+                </div> -->
+                <!-- Horizontal line below the link -->
+                <hr style="
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  width: 80%;
+                  margin: 10px auto;
+                " />
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- GIGW Compliance Button -->
+        <div class="gigw-compliance0" id="gigwButton">
+          <i class="fas fa-universal-access"></i>
+        </div>
+
+        <!-- Accessibility Panel -->
+        <div class="accessibility-panel" id="accessibilityPanel">
+          <button id="increaseText">
+            <i class="fas fa-text-height"></i> Increase Text Size
+          </button>
+          <button id="decreaseText">
+            <i class="fas fa-text-height"></i> Decrease Text Size
+          </button>
+          <button id="resetText">
+            <i class="fas fa-undo"></i> Reset Text Size
+          </button>
+          <button id="toggleDarkMode">
+            <i class="fas fa-moon"></i> Toggle Dark Mode
+          </button>
+          <button id="readAloud">
+            <i class="fas fa-volume-up"></i> Read Aloud
+          </button>
+          <button id="stopReading">
+            <i class="fas fa-stop"></i> Stop Reading
+          </button>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        // ---------------- Google Translator ----------------
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "mr",
+              includedLanguages: "mr,en,hi",
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            },
+            "google_translate_element"
+          );
+        }
+
+        // ---------------- Visitor Counter ----------------
+        function updateVisitorCounter() {
+          if (localStorage.getItem("visits")) {
+            let visits = parseInt(localStorage.getItem("visits")) + 1;
+            localStorage.setItem("visits", visits);
+            document.getElementById("visitorCounter").innerText = visits;
+          } else {
+            localStorage.setItem("visits", 1);
+            document.getElementById("visitorCounter").innerText = 1;
+          }
+        }
+        document.addEventListener("DOMContentLoaded", updateVisitorCounter);
+
+        // ---------------- Counter Animation ----------------
+        function animateCounters() {
+          const counters = document.querySelectorAll(".counter");
+          const duration = 2500;
+          const interval = 50;
+
+          counters.forEach((counter) => {
+            const target = +counter.getAttribute("data-target");
+            const steps = duration / interval;
+            const increment = target / steps;
+            let current = 0;
+
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                counter.innerText = target;
+                clearInterval(timer);
+              } else {
+                counter.innerText = Math.floor(current);
+              }
+            }, interval);
+          });
+        }
+        document.addEventListener("DOMContentLoaded", animateCounters);
+
+        // ---------------- Gallery Modal ----------------
+        document.addEventListener("DOMContentLoaded", function () {
+          const galleryImages = document.querySelectorAll(".gallery-img");
+          const modalImage = document.getElementById("modalImage");
+          const modalCaption = document.getElementById("modalCaption");
+          const imageModal = new bootstrap.Modal(
+            document.getElementById("imageModal")
+          );
+
+          galleryImages.forEach((image) => {
+            image.addEventListener("click", function () {
+              modalImage.src = this.src;
+              modalCaption.innerText = this.dataset.caption;
+              imageModal.show();
+            });
+          });
+
+          // ---------------- See More Button ----------------
+          const seeMoreBtn = document.getElementById("seeMoreBtn");
+          const moreImages = document.getElementById("moreImages");
+
+          if (seeMoreBtn && moreImages) {
+            seeMoreBtn.addEventListener("click", () => {
+              if (moreImages.classList.contains("d-none")) {
+                moreImages.classList.remove("d-none");
+                seeMoreBtn.innerText = "See Less";
+              } else {
+                moreImages.classList.add("d-none");
+                seeMoreBtn.innerText = "See More";
+              }
+            });
+          }
+        });
+
+        // ---------------- Accessibility Panel ----------------
+        const gigwButton = document.getElementById("gigwButton");
+        const accessibilityPanel = document.getElementById("accessibilityPanel");
+
+        gigwButton.addEventListener("click", () => {
+          accessibilityPanel.classList.toggle("active");
+        });
+
+        let currentSize = 100;
+
+        document.getElementById("increaseText").addEventListener("click", () => {
+          currentSize += 10;
+          document.body.style.fontSize = currentSize + "%";
+        });
+
+        document.getElementById("decreaseText").addEventListener("click", () => {
+          currentSize -= 10;
+          document.body.style.fontSize = currentSize + "%";
+        });
+
+        document.getElementById("resetText").addEventListener("click", () => {
+          currentSize = 100;
+          document.body.style.fontSize = "100%";
+        });
+
+        document
+          .getElementById("toggleDarkMode")
+          .addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+          });
+
+        // ---------------- Text-to-Speech ----------------
+        let synth = window.speechSynthesis;
+        let utterance;
+
+        document.getElementById("readAloud").addEventListener("click", () => {
+          let text = document.body.innerText;
+          if (synth.speaking) synth.cancel();
+          utterance = new SpeechSynthesisUtterance(text);
+          synth.speak(utterance);
+        });
+
+        document.getElementById("stopReading").addEventListener("click", () => {
+          if (synth.speaking) synth.cancel();
+        });
+      </script>
+
+      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

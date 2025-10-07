@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>वडेगाव - गावाची माहिती</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/villageinfo.css">
+  </head>
+   <link rel="stylesheet" href="index.css">
+  <body>
+    <!-- Google Translator -->
+    <div class="google-translator">
+      <div id="google_translate_element"></div>
+    </div>
+
+    <!-- Top Bar -->
+      <div class="top-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <i class="fas fa-landmark"></i> महाराष्ट्र शासन | GOVERNMENT OF MAHARASHTRA
+          </div>
+          <div class="col-12 col-md-6 text-center">
+             <i class="fas fa-envelope"></i><a href="mailto:wadegaon.stegp@rediffmail.com
+">wadegaon.stegp@rediffmail.com
+</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo Header -->
+ <div class="logo-header py-3 d-flex justify-content-between align-items-center px-4">
+  <div class="logo-container d-flex align-items-center">
+    <img src="img/main_logo.jpg" alt="ग्रामपंचायत लोगो" class="logo me-3" />
+    <div class="logo-text">
+      
+      
+    </div>
+  </div>
+  <div class="contact-short d-none d-md-block text-end">
+    
+  </div>
+</div>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bar">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                ><i class="fas fa-home"></i> मुखपृष्ठ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="members.html"
+                ><i class="fas fa-users"></i> पदाधिकारी</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="villageinfo.html"
+                ><i class="fas fa-info-circle"></i> गावाची माहिती</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="impnumbers.html"
+                ><i class="fas fa-phone-alt"></i> महत्वाचे नंबर</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="govwork.html"
+                ><i class="fas fa-users"></i>शासकीय कामे </a
+              >
+          </li>
+            <!-- New Dropdown Menu -->
+                        <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="yojna.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                onclick="window.location=this.getAttribute('href');"
+              >
+                <i class="fas fa-project-diagram"></i> शासकीय योजना
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-custom"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="yojna.html"
+                    >१५ वित्त आयोग</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="jaljeevan.html"
+                    >जल जीवन मिशन</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="pmawas.html"
+                    >प्रधान मंत्री आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="nrega.html"
+                    >महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार हमी योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="tanda_vasti.html"
+                    >तांडा/वस्ती योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="sc_st_development.html"
+                    >अनुसूचीत जाती व नवबौध्द विकास</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="ramaiawas.html"
+                    >रमाई आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="shabriawas.html"
+                    >शबरी आदिवासी घरकुल योजना</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- लाभार्थी रजिस्टर Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="beneficiaryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user-check"></i> लाभार्थी रजिस्टर
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-custom"
+                aria-labelledby="beneficiaryDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="pm_awas.html"
+                    >प्रधानमंत्री आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="shabri_awas.html"
+                    >शबरी आवास योजना</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-custom"
+                    href="ramai_awas.html"
+                    >रमाई आवास योजना</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services-for-citizens.html"
+                ><i class="fas fa-user-check"></i> नागरिकांसाठी सेवा</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="tax-collection.html"
+                ><i class="fas fa-money-bill-wave"></i> कर संकलन</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="complain-us.html"
+                ><i class="fas fa-comments"></i> तक्रार द्या</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <div class="container">
+        <marquee behavior="scroll" direction="left">
+          <i class="fas fa-bullhorn"></i> ग्रामपंचायत मध्ये स्वच्छता अभियान चालू
+          आहे. सर्व नागरिकांनी सहभागी व्हावे.
+        </marquee>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <!-- Notification -->
+      <div class="notification">
+       <hi><i class="fas fa-exclamation-circle red-icon"></i></hi>
+
+        <strong>महत्वाची सूचना :</strong> नवीन जन्म नोंदणी प्रक्रिया ऑनलाईन सुरू
+        झाली आहे.
+      </div>
+
+      <h1 class="section-title">वडेगाव गावाची माहिती</h1>
+
+      <div class="section">
+        <h2 class="section-title">गावाचा इतिहास</h2>
+        <p>
+          ग्रामपंचायत वडेगाव/स्टेशन हे गोंदिया जिल्ह्यातील अर्जुनी/मोरगाव तालुक्यात वसलेले एक शेती प्रधान आणि प्रगतशील गाव असून, याची ओळख पर्यावरणपूरक जीवनशैली, सामाजिक एकता आणि सर्वांगीण विकासासाठी घेतलेल्या उपक्रमांमुळे विशेष ठरते. हे गाव नैसर्गिक सौंदर्याने नटलेले असून, पर्यावरण संरक्षणासाठी येथे विशेष प्रयत्न केले जातात. सुमारे १३१२ लोकसंख्या असलेल्या या गावातील ग्रामस्थांनी स्वच्छता, शिक्षण, आरोग्य, आणि कृषी क्षेत्रात उल्लेखनीय कामगिरी करत गावाचा विकास साधला आहे. 1959 मध्ये स्थापनेपासून ग्रामपंचायतने गावाच्या सर्वांगीण प्रगतीसाठी सातत्याने प्रयत्न केले असून, सामाजिक आणि पर्यावरणपूरक उपक्रम राबवून गावाच्या विकासाची दिशा निश्चित केली आहे. सामाजिक सहकार्य, पारदर्शक प्रशासन आणि शाश्वत विकासाच्या माध्यमातून गावाने स्वतःची वेगळी ओळख निर्माण केली आहे.स्वच्छता मोहिमा, वृक्षारोपण कार्यक्रम, शिक्षण व्यवस्था सुधारणा, आरोग्य सुविधांचा विकास आणि आधुनिक शेती तंत्रज्ञानाचा अवलंब यांसारख्या उपक्रमांमुळे गावाने एक आदर्श ग्राम म्हणून नावारूपास येण्याचा मार्ग तयार केला आहे. सामाजिक बांधिलकी आणि सुशासनाचा उत्तम नमुना असलेल्या वडेगाव/स्टेशन ग्रामपंचायतीने आपल्या संकल्पनेतून गावाच्या उज्ज्वल भविष्यासाठी एक दिशादर्शक पायंडा निर्माण केला आहे. भविष्यात अधिक प्रगतशील आणि स्वयंपूर्ण ग्राम बनवण्यासाठी येथील ग्रामस्थ आणि ग्रामपंचायत कटिबद्ध असून, आपल्या प्रयत्नांमुळे हे गाव एक आदर्श ग्राम म्हणून ओळखले जाणार आहे.
+        </p>
+      </div>
+
+       <!-- मुख्य पिके -->
+  
+      <div class="section">
+        <h2 class="section-title">मुख्य पिके</h2>
+        <p>
+         • भात (Paddy): भात हे गावातील मुख्य पिक असून खरीप आणि रब्बी असे एका वर्षात २ वेळा उत्पादन घेतले जाते.
+• तूर (Tur), ही कडधान्ये देखील या परिसरात घेतली जातात.
+आणि इतर भाजीपाला पिके पण घेतली जातात.<br>
+
+         भात (Paddy): पावसाळ्यात भात हे एक महत्त्वाचे पीक आहे.<br>
+
+         नाचणी (Nagli) आणि वरी/वरई: ही पारंपरिक पिके असून ती या भागातील शेतीचा एक भाग आहेत.<br>
+
+        तूर (Tur), उडीद (Udid) आणि कुळीथ (Kulith): ही कडधान्ये देखील या परिसरात घेतली जातात.<br>
+
+        आंबा (Mango): काही ठिकाणी आंब्याचे पीक घेतले जाते, परंतु अवकाळी पावसामुळे त्याचे नुकसान होऊ शकते.<br>
+
+        कांदा (Onion): काही प्रमाणात कांद्याचे पीकही घेतले जाते.
+       </p>
+
+        <h1 class="section-title">गावातील लोकजीवन </h1>
+
+      <div class="section">
+        <h2 class="section-title">जीवनशैली</h2>
+        <p>
+          सादगीपूर्ण जीवन: येथील लोक निसर्गाच्या सानिध्यात, साधे आणि सरळ जीवन जगतात. त्यांची जीवनशैली कमी गरजांवर आधारित आहे.<br>
+
+      शेतीवर आधारित अर्थव्यवस्था: या भागातील लोकांचा मुख्य व्यवसाय शेती आहे. भात, नागली, वरी यांसारखी पारंपरिक पिके घेतली जातात,
+      परंतु आता स्ट्रॉबेरीसारख्या नगदी पिकांनीही आर्थिक परिस्थितीत सुधारणा घडवून आणली आहे.<br>
+      परंपरा आणि चालीरिती: आदिवासी जमातींमध्ये त्यांच्या स्वतःच्या विशिष्ट परंपरा, सण-उत्सव आणि चालीरिती आहेत.
+       ते निसर्गपूजा आणि त्यांच्या कुलदेवतांना महत्त्व देतात.<br>
+      घरांची रचना: घरे नैसर्गिक साधनांचा वापर करून, जसे की लाकूड, बांबू, गवत आणि माती वापरून बांधलेली दिसतात. 
+      ती साधी पण मजबूत असतात.
+        </p>
+         <div class="section">
+        <h2 class="section-title">सामाजिक जीवन</h2>
+        <p>
+          एकसंध समाज: वडेगाव आणि आसपासच्या पाड्यांमध्ये लोक गुण्यागोविंदाने राहतात. 
+          त्यांच्यात सामाजिक एकोपा आणि सामुदायिक भावना अधिक दिसून येते.<br>
+
+         शिक्षण: शासनाचे प्रयत्न आणि वाढत्या जागृतीमुळे शिक्षणाचे प्रमाण वाढत आहे. 
+         मात्र, काही ठिकाणी आजही शिक्षणाच्या सुविधांची कमतरता जाणवू शकते.<br>
+
+         आरोग्य: आरोग्याच्या सुविधा अजूनही मर्यादित आहेत, ज्यामुळे अनेकदा छोट्या-मोठ्या आजारांवर 
+         पारंपरिक उपायांचा अवलंब केला जातो.<br>
+
+        उत्सव आणि सण: जागतिक आदिवासी दिन, स्थानिक जत्रा आणि पारंपरिक नृत्य हे त्यांच्या 
+        लोकजीवनाचा अविभाज्य भाग आहेत. यातून त्यांची संस्कृती जपली जाते.<br>
+        एकूणच, वडेगावमधील लोकजीवन हे ग्रामीण आणि आदिवासी संस्कृतीचे मिश्रण आहे, ज्यात साधेपणा,
+         निसर्गाशी जवळीक आणि सामूहिक एकोपा हे प्रमुख गुण दिसून येतात. आधुनिकतेचा प्रभाव हळूहळू वाढत 
+         असला, तरी त्यांची पारंपरिक ओळख अजूनही टिकून आहे.</p>
+
+ <div class="container my-5">
+  
+  <div class="card shadow-lg border-0 rounded-3 mb-4">
+    <div class="card-header bg-success text-white text-center fs-4 fw-bold">
+      🌿 ग्रामपंचायतीची सर्वसाधारण माहिती
+    </div>
+    <div class="card-body">
+      <p><strong>ग्रामपंचायत नाव:</strong> वडेगाव</p>
+      <p><strong> जिल्हा मुख्यालयापासून अंतर:</strong> ~90 किमी</p>
+      <p><strong> तालुक्यापासून अंतर:</strong> ~15-18 किमी (Balapur)</p>
+      <p>
+        <strong> जवळची गावे:</strong> पोहाळी, हतगड, मोहपाडा, सरड, उंबरपाडा,
+        दिगर, घोडांबे, साजोळे
+      </p>
+      <p><strong>जवळची शहरे:</strong> Akola, मालेगाव, कळवण, सटाणा</p>
+      <p><strong> तालुका:</strong> Balapur</p>
+      <p><strong>जिल्हा:</strong> Akola </p>
+      <p><strong> पिन कोड:</strong> 444502</p>
+      <p><strong> स्थान:</strong> 20.7625945,79.9024232</p>
+      <p><strong> लोकसंख्या:</strong> 1312 (पुरुष: 660, महिला: 652)</p>
+      <p><strong>कुटुंब संख्या:</strong> 254</p>
+      <p><strong> क्षेत्रफळ:</strong>490 हेक्टर</p>
+      <p><strong> वार्ड संख्या:</strong> 3</p>
+      <p><strong> ईमेल आयडी:</strong> <a href="mailto:wadegaon.stegp@rediffmail.com
+">wadegaon.stegp@rediffmail.com
+</a></p>
+      <p><strong> मोबाईल नंबर:</strong> <a href="tel:9370694651">9370694651</a></p>
+    </div>
+  </div>
+
+  <!-- लोकसंख्या -->
+  <div class="card shadow-sm border-0 rounded-3 mb-4">
+    <div class="card-header bg-primary text-white fs-5 fw-bold">
+      👥 लोकसंख्या
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>तपशील</th>
+              <th>पुरुष</th>
+              <th>स्त्रिया</th>
+              <th>एकूण</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>एकुण लोकसंख्या</b></td>
+              <td>660</td>
+              <td>652</td>
+              <td class="fw-bold">1312</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- घनकचरा व्यवस्थापन -->
+  <div class="container my-5">
+
+  <!-- ग्रामीण पाणीपुरवठा योजना -->
+  <div class="card shadow-lg border-0 rounded-3 mb-5">
+    <div class="card-header bg-gradient bg-primary text-white text-center fs-4 fw-bold">
+      💧 ग्रामीण पाणीपुरवठा योजनेची माहिती
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+          <tbody>
+            <tr><th> योजनेचे नाव</th><td>भारत निर्माण योजना</td></tr>
+            <tr><th> योजना मंजुर वर्ष</th><td>सन 2009/2010</td></tr>
+            <tr><th> योजना कार्यान्वित वर्ष</th><td>सन 2011/2012</td></tr>
+            <tr><th> योजनेची अंदाजपत्रकिय रक्कम</th><td>2,34,46,595/-</td></tr>
+            <tr><th> योजनेवर झालेला खर्च</th><td>2,10,98,061/-</td></tr>
+            <tr><th> पाण्याचा स्त्रोत</th><td>मुकणे धरण</td></tr>
+            <tr><th> मुकणे धरण ते टाकी अंतर</th><td>1900 मीटर</td></tr>
+            <tr><th> पाण्याच्या टाकीची क्षमता</th><td>2 लाख लिटर</td></tr>
+            <tr><th> वैयक्तिक नळ जोडणी</th><td>687</td></tr>
+            <tr><th> पाणी मिटर जोडणी</th><td>687</td></tr>
+            <tr><th> सार्वजनिक नळ जोडणी</th><td>00</td></tr>
+            <tr><th> जलशुध्दीकरण केंद्र क्षमता</th><td>10 लाख लिटर</td></tr>
+            <tr><th> प्रति दिन पाणी पुरवठा</th><td>दिवसातुन 2 वेळेस</td></tr>
+            <tr><th> प्रति व्यक्ती पुरवठा</th><td>60 लिटर / माणसी</td></tr>
+            <tr><th> प्रतिमहा अॅलम</th><td>सरासरी 120 किलो</td></tr>
+            <tr><th> प्रतिमहा क्लोरीन</th><td>सरासरी 8 ते 10 किलो</td></tr>
+            <tr><th> वैयक्तिक पाणीपट्टी आकार</th><td>1200 रुपये प्रति वर्ष</td></tr>
+            <tr><th> पाणीपट्टी वसुल कालावधी</th><td>वार्षिक</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+ <div class="card shadow-lg border-0 rounded-3 mb-5">
+  <div class="card-header bg-gradient bg-success text-white fs-4 fw-bold text-center">
+    🏡 गावातील सुविधा
+  </div>
+  <div class="card-body">
+    <div class="row g-4">
+      
+      
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-success">💧 पाणी</h5>
+          <p>"हर घर जल, हर घर नल" योजनेतून नळ कनेक्शन</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-danger">🏥 आरोग्य</h5>
+          <p>प्राथमिक आरोग्य केंद्र, उपकेंद्र व खाजगी दवाखाने</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-primary">🚰 पिण्याचे पाणी</h5>
+          <p>खाजगी RO ATM सुविधा</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-info">⛅ हवामान माहिती</h5>
+          <p>मोबाईलवर उपलब्ध</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-warning">📚 शिक्षण</h5>
+          <p>
+            प्राथमिक शाळा (१ ते ४ वी) – जिल्हा परिषद शाळा <br>
+            उच्च माध्यमिक शाळा (५ ते १२ वी) – डी.पी. विद्यालय वडेगाव
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-pink">👩‍👦‍👦 महिला व बालकल्याण</h5>
+          <p>अंगणवाडी केंद्र – ५</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-secondary">📶 दूरसंचार</h5>
+          <p>इंटरनेट सुविधा उपलब्ध</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-3 bg-light rounded-3 shadow-sm h-100 text-center hover-card">
+          <h5 class="fw-bold text-dark">💒 सामाजिक सभामंडप</h5>
+          <p>३ (विवाह, वर्षश्राद्ध, धार्मिक विधी)</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- About Section -->
+      <div class="col-md-4 mb-4">
+        <h5>ग्रामपंचायतीची माहिती</h5>
+        <p>
+          नाव: वडेगाव <br>
+          स्थापना: - <br>
+          Email: wadegaon.stegp@rediffmail.com
+ <br>
+          सेन्सस कोड: 549697 <br>
+          तालुका पासून अंतर: 18 कि.मी. <br>
+          जिल्हा मुख्यालयापासून अंतर: 82 कि.मी.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5>द्रुत लिंक</h5>
+        <div class="quick-links">
+          <a href="index.html"><i class="fas fa-angle-right"></i> मुख्य पृष्ठ</a>
+          <a href="villageinfo.html"><i class="fas fa-angle-right"></i> ग्रामपंचायती विषयी</a>
+          <a href="tax-collection.html"><i class="fas fa-angle-right"></i> आर्थिक माहिती</a>
+          <a href="yojna.html"><i class="fas fa-angle-right"></i> योजना व कामे</a>
+          <a href="services-for-citizens.html"><i class="fas fa-angle-right"></i> ऑनलाइन सेवा</a>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4">
+        <h5>संपर्क</h5>
+        <p><i class="fas fa-map-marker-alt"></i> ग्रामपंचायत वडेगाव, पिन: 444502</p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:wadegaon.stegp@rediffmail.com
+">wadegaon.stegp@rediffmail.com
+</a></p>
+        <p><i class="fas fa-phone-alt"></i><a href="tel:+91 9370694651">9370694651</a></p>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+      <!-- Copyright -->
+            <div class="row">
+              <div class="col text-center">
+                <p class="mb-0">
+                  © 2025 वडेगाव ग्रामपंचायत. सर्व हक्क राखीव. <br />
+                  <!-- Design & Developed  --> 
+                  
+
+                <!-- </p>
+                <div class="social-img">
+                  <a href="https://www.instagram.com/kumiradi.infotech" target="_blank">
+                    <img src="img/instagram.jpg" alt="Instagram">
+                  </a>
+                  <a href="https://www.facebook.com/yourusername" target="_blank">
+                    <img src="img/facebook.jpg" alt="Facebook">
+                  </a>
+                  <a href="https://www.youtube.com/@kumiradiinfotech" target="_blank">
+                    <img src="img/youtube.jpg" alt="YouTube">
+                  </a>
+                </div> -->
+                <!-- Horizontal line below the link -->
+                <hr style="
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  width: 80%;
+                  margin: 10px auto;
+                " />
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- GIGW Compliance Button -->
+        <div class="gigw-compliance0" id="gigwButton">
+          <i class="fas fa-universal-access"></i>
+        </div>
+
+        <!-- Accessibility Panel -->
+        <div class="accessibility-panel" id="accessibilityPanel">
+          <button id="increaseText">
+            <i class="fas fa-text-height"></i> Increase Text Size
+          </button>
+          <button id="decreaseText">
+            <i class="fas fa-text-height"></i> Decrease Text Size
+          </button>
+          <button id="resetText">
+            <i class="fas fa-undo"></i> Reset Text Size
+          </button>
+          <button id="toggleDarkMode">
+            <i class="fas fa-moon"></i> Toggle Dark Mode
+          </button>
+          <button id="readAloud">
+            <i class="fas fa-volume-up"></i> Read Aloud
+          </button>
+          <button id="stopReading">
+            <i class="fas fa-stop"></i> Stop Reading
+          </button>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        // ---------------- Google Translator ----------------
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "mr",
+              includedLanguages: "mr,en,hi",
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            },
+            "google_translate_element"
+          );
+        }
+
+        // ---------------- Visitor Counter ----------------
+        function updateVisitorCounter() {
+          if (localStorage.getItem("visits")) {
+            let visits = parseInt(localStorage.getItem("visits")) + 1;
+            localStorage.setItem("visits", visits);
+            document.getElementById("visitorCounter").innerText = visits;
+          } else {
+            localStorage.setItem("visits", 1);
+            document.getElementById("visitorCounter").innerText = 1;
+          }
+        }
+        document.addEventListener("DOMContentLoaded", updateVisitorCounter);
+
+        // ---------------- Counter Animation ----------------
+        function animateCounters() {
+          const counters = document.querySelectorAll(".counter");
+          const duration = 2500;
+          const interval = 50;
+
+          counters.forEach((counter) => {
+            const target = +counter.getAttribute("data-target");
+            const steps = duration / interval;
+            const increment = target / steps;
+            let current = 0;
+
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                counter.innerText = target;
+                clearInterval(timer);
+              } else {
+                counter.innerText = Math.floor(current);
+              }
+            }, interval);
+          });
+        }
+        document.addEventListener("DOMContentLoaded", animateCounters);
+
+        // ---------------- Gallery Modal ----------------
+        document.addEventListener("DOMContentLoaded", function () {
+          const galleryImages = document.querySelectorAll(".gallery-img");
+          const modalImage = document.getElementById("modalImage");
+          const modalCaption = document.getElementById("modalCaption");
+          const imageModal = new bootstrap.Modal(
+            document.getElementById("imageModal")
+          );
+
+          galleryImages.forEach((image) => {
+            image.addEventListener("click", function () {
+              modalImage.src = this.src;
+              modalCaption.innerText = this.dataset.caption;
+              imageModal.show();
+            });
+          });
+
+          // ---------------- See More Button ----------------
+          const seeMoreBtn = document.getElementById("seeMoreBtn");
+          const moreImages = document.getElementById("moreImages");
+
+          if (seeMoreBtn && moreImages) {
+            seeMoreBtn.addEventListener("click", () => {
+              if (moreImages.classList.contains("d-none")) {
+                moreImages.classList.remove("d-none");
+                seeMoreBtn.innerText = "See Less";
+              } else {
+                moreImages.classList.add("d-none");
+                seeMoreBtn.innerText = "See More";
+              }
+            });
+          }
+        });
+
+        // ---------------- Accessibility Panel ----------------
+        const gigwButton = document.getElementById("gigwButton");
+        const accessibilityPanel = document.getElementById("accessibilityPanel");
+
+        gigwButton.addEventListener("click", () => {
+          accessibilityPanel.classList.toggle("active");
+        });
+
+        let currentSize = 100;
+
+        document.getElementById("increaseText").addEventListener("click", () => {
+          currentSize += 10;
+          document.body.style.fontSize = currentSize + "%";
+        });
+
+        document.getElementById("decreaseText").addEventListener("click", () => {
+          currentSize -= 10;
+          document.body.style.fontSize = currentSize + "%";
+        });
+
+        document.getElementById("resetText").addEventListener("click", () => {
+          currentSize = 100;
+          document.body.style.fontSize = "100%";
+        });
+
+        document
+          .getElementById("toggleDarkMode")
+          .addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+          });
+
+        // ---------------- Text-to-Speech ----------------
+        let synth = window.speechSynthesis;
+        let utterance;
+
+        document.getElementById("readAloud").addEventListener("click", () => {
+          let text = document.body.innerText;
+          if (synth.speaking) synth.cancel();
+          utterance = new SpeechSynthesisUtterance(text);
+          synth.speak(utterance);
+        });
+
+        document.getElementById("stopReading").addEventListener("click", () => {
+          if (synth.speaking) synth.cancel();
+        });
+      </script>
+
+      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

@@ -29,8 +29,8 @@ body {
 }
 
 .logo {
-  height: 95px;          
-  width: 253px;           
+  height: 200px;          
+  width: 1000px;           
   object-fit: contain;   
   border-radius: 8px;   
   border: 2px solid #ffffff;
